@@ -1,5 +1,8 @@
-h1{
-    color: black;
+h1 {
+  font-size: 40px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .aboutme-header{
     padding-left: 450px;
@@ -8,16 +11,26 @@ h1{
 .paragraph-aboutme{
     padding-top: 300px;
 }
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+}
+
 #container{
-    width: 100%;
-    height: 100%;
+    width: 700px;
+    margin: 0 auto;
 }
-/* 
-#container-contact{
-    margin-left: 1%;
-    margin-right: 1%;
+
+.center {
+    padding:70px 15px 15px 40px;
+    border: 0px solid green;
+    text-align: justify;
 }
- */
+
 body {
     background-color: #93B874;
     width: 600px;
@@ -30,9 +43,9 @@ body {
 .contact{
     position: absolute;
     margin-left: 490px;
-
     color: dodgerblue;
 }
+
 .contact-header1{
     padding-left: 400px;
     color: black;
@@ -49,10 +62,10 @@ img {
     margin-left: -150px;
     margin-top: -100px;
 }
+
 .img-contact{
     position: relative;
-     top: 100pt;
-
+    top: 100pt;
     left: 50%;
     margin-left: -450px;
     margin-top: -150px;
@@ -110,4 +123,33 @@ img {
     display: inline;
     padding: 0 10em;
     border-right: 2px solid firebrick;
+}
+
+
+/* Mozilla based browsers */
+::-moz-selection {
+background-color: #FF68B0;
+color: #000;
+}
+
+/* Works in Safari */
+::selection {
+background-color: #FF68B0;
+color: #FFF;
+}
+
+/* Works in Opera */
+::-o-selection {
+background-color: #FF68B0;
+color: #FFF;
+}
+::-ms-selection {
+background-color: #FF68B0;
+color: #FFF;
+}
+
+/* Works in Internet Explorer */
+::-webkit-selection {
+background-color: #FF68B0;
+color: #FFF;
 }
