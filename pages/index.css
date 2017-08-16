@@ -1,155 +1,106 @@
-h1 {
-  font-size: 40px;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+* {
+    box-sizing: border-box;
 }
-.aboutme-header{
-    padding-left: 450px;
-    color: black;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-.paragraph-aboutme{
-    padding-top: 300px;
+[class*="col-"] {
+    float: left;
+    padding: 15px;
 }
-
-#footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
+html {
+    font-family: "Lucida Sans", sans-serif;
 }
 
-#container{
-    width: 700px;
-    margin: 0 auto;
+.button {
+    font-family: verdana;
+    border: 2px solid #00CED1;
+    background: #87CEFA;
 }
 
-.center {
-    padding:70px 15px 15px 40px;
-    border: 0px solid green;
-    text-align: justify;
+.button3 {width: 50%;}
+
+.header {
+    background-color: #87CEFA;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 10px;
+    margin-bottom: 7px;
+    background-color: #87CEFA;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #87CEFA;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #87CEFA;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
 }
 
-body {
-    background-color: #93B874;
-    width: 600px;
+.textcenter {
+    float: center;
+    width: 100%;
 }
 
-.contact-body{
-    background-color: whitesmoke;
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
-.contact{
-    position: absolute;
-    margin-left: 490px;
-    color: dodgerblue;
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 }
 
-.contact-header1{
-    padding-left: 400px;
-    color: black;
-}
-
-img {
-
-    position: relative;
-    top: 60%;
-    left: 50%;
-    border-radius: 8px;
-    padding-top: 100px;
-    right: 150px;
-    margin-left: -150px;
-    margin-top: -100px;
-}
-
-.img-contact{
-    position: relative;
-    top: 100pt;
-    left: 50%;
-    margin-left: -450px;
-    margin-top: -150px;
-}
-
-.cell{
-    top:10pt;
-
-    padding-left: 480px;
-}
-.email{
-    padding-left: 480px;
-}
-.facebook{
-    padding-left: 480px;
-}
-.address{
-    padding-left: 480px;
-}
-.footer-index{
-    margin-top: 100px;
-}
-#footer-contact{
-    margin-top: 100px;
-}
-#nav_bar ul{
-    list-style: none;
-
-    padding: 1em 0;
-    border-top: 2px solid firebrick;
-    border-bottom: 2px solid firebrick;
-
-}
-#nav_bar li{
-    display: inline;
-    padding: 0 4.2em;
-    border-right: 2px solid firebrick;
-}
-#na a{
-    font-weight: bold;
-    color: blue;
-}
-#nav_bar a.current{
-    text-decoration: none;
-}
-#nav_bar_contact ul{
-    list-style: none;
-
-    padding: 1em 0;
-    border-top: 2px solid firebrick;
-    border-bottom: 2px solid firebrick;
-
-}
-#nav_bar_contact li{
-    display: inline;
-    padding: 0 10em;
-    border-right: 2px solid firebrick;
-}
-
-
-/* Mozilla based browsers */
-::-moz-selection {
-background-color: #FF68B0;
-color: #000;
-}
-
-/* Works in Safari */
-::selection {
-background-color: #FF68B0;
-color: #FFF;
-}
-
-/* Works in Opera */
-::-o-selection {
-background-color: #FF68B0;
-color: #FFF;
-}
-::-ms-selection {
-background-color: #FF68B0;
-color: #FFF;
-}
-
-/* Works in Internet Explorer */
-::-webkit-selection {
-background-color: #FF68B0;
-color: #FFF;
-}
